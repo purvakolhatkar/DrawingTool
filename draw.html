@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Online drawing tool</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="draw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+<div class="row">
+	<div class="col-sm-10">
+	<h3 align='center'>Canvas</h3>
+	</div>
+	<div class="col-sm-2">
+	<h3 align='left'>Color pallete</h3>
+	</div>
+</div>
+<div class="row">	
+<!--div id="container" style="padding:4px 0px 0px 0px;"-->
+	<!--div class="col-sm-1"></div-->
+	
+	<div class="col-sm-10">
+	
+
+	<div id="canvasDiv" style="padding:0px 0px 0px 5px;">
+	<canvas id="myCanvas" style="border:1px solid;">
+	<p>Your browser does not support this web application.</p>
+	<p>Try on Firefox or Google Chrome</p>
+	</canvas>
+	
+	<!--div id="cursor" style="font-size:8pt; padding-left: 50px; float: left;">0 0</div-->
+	</div>
+	</div>
+	
+	<div class="col-sm-2">
+	<div id="pickColor" style=" float: left;">
+			<div id="crimson" class="circle" style="background:crimson;"></div>
+			<div id="red"  class="circle" style="background:red;"></div>
+			<div id="fuchsia" class="circle" style="background:fuchsia;"></div>
+			<div id="pink" class="circle" style="background:pink;"></div>			
+			<div id="orange" class="circle" style="background:orange;"></div>
+			<div id="yellow" class="circle" style="background:yellow;"></div>
+			<div id="green" class="circle" style="background:green;"></div>
+			<div id="lime" class="circle" style="background:lime;"></div>
+			<div id="blue" class="circle" style="background:blue;"></div>
+			<div id="cornflowerBlue" class="circle" style="background:cornflowerBlue;"></div>
+			<div id="indigo" class="circle" style="background:indigo;"></div>
+			<div id="purple" class="circle" style="background:purple;"></div>
+			<div id="black" class="circle" style="background:black;"></div>
+			<div id="grey" class="circle" style="background:grey;"></div>
+			<!--div id="white" style="background:white; width:100px; height:50px; float:left;"></div><div style="clear: both;"></div-->
+			<div style="clear: both;"></div> 			 
+	</div>
+	</div>
+	<!--div class="col-sm-1"></div-->
+	
+</div>
+<div class="row">
+<br>
+	<div class="col-sm-1"></div>
+	<div id="toolBar" style="border: 1px solid black; padding:0px 0px 0px 0px; float: left;" align="center">
+	<img id="clearAll" title="New" src="assets/add.png" class="toolbar" ></img>
+	<img id="eraser" title="Eraser" src="assets/eraser.png" class="toolbar"></img>
+	<img id="fill" title="Background" src="assets/fill.png" class="toolbar"></img>
+	<img id="coolArc" title="Fireworks" src="assets/fireworks.png" class="toolbar"></img>
+	<img id="normal" title="Pencil" src="assets/pencil.png" class="toolbar"></img>
+	<img id="confetti" title="Airbrush" src="assets/airbrush.png" class="toolbar"></img>
+	<img id="radius5" title="Size+" src="assets/plus.png" class="toolbar"></img>
+	<img id="radius3" title="Size-" src="assets/minus.png" class="toolbar"></img>
+	</div>
+</div>
+<!--/div-->
+<!--div class="row">
+<br>
+<div class="col-sm-1"></div>
+<div id="toolBar" style="border: 1px solid black; float: left;">
+<div class="col-sm-1">	
+<div id="eraser" style="background:grey; width:50px; height:50px; "></div>
+</div>
+<div class="col-sm-1">	
+<div id="fill" style="background:violet; width:50px; height:50px; "></div>
+</div>
+<div class="col-sm-1">	
+<div id="clearAll" style="background:black; width:50px; height:50px; "></div>
+</div>
+</div>
+<div class="col-sm-1"></div>
+</div-->
+<script type="text/javascript" src="init.js"></script>
+<script type="text/javascript" src="drawjavascript.js"></script>
+</body>
+</html>
